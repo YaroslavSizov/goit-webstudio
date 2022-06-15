@@ -1,0 +1,230 @@
+:root {
+  --logo-black-color: #000000;
+  --logo-blue-color: #2196f3;
+  --primary-white-color: #ffffff;
+  --secondary-white-color: #f5f4fa;
+  --accent-link-color: #2196f3;
+  --accent-btn-color: #188ce8;
+  --accent-filter-btn-color: #2196f3;
+  --title-text-color: #212121;
+  --paragraph-color: #757575;
+  --hero-bg-color: #2f303a;
+  --hero-btn-bg-color: #2196f3;
+  --footer-bg-color: #2f303a;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+
+  color: var(--paragraph-color);
+  background-color: var(--primary-white-color);
+}
+
+ul li {
+  list-style: none;
+}
+
+/* logo header&footer*/
+.logo {
+  text-decoration-line: none;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+
+  color: var(--logo-black-color);
+}
+.logo .word-web {
+  color: var(--logo-blue-color);
+}
+.logo .word-studio {
+  color: var(--primary-white-color);
+}
+
+/* header */
+/* link */
+.header-link {
+  text-decoration-line: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+
+  color: var(--title-text-color);
+}
+
+.header-link:hover,
+.header-link:focus {
+  color: var(--accent-link-color);
+}
+/* contact */
+.header-contact {
+  text-decoration-line: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+
+  color: var(--paragraph-color);
+}
+
+.header-contact:hover,
+.header-contact:focus {
+  color: var(--accent-link-color);
+}
+/* footer */
+.footer {
+  background-color: var(--footer-bg-color);
+}
+.address-map {
+  text-decoration-line: none;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-white-color);
+}
+.address-contact {
+  text-decoration-line: none;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+.address-contact:hover,
+.address-contact:focus {
+  color: var(--accent-link-color);
+}
+
+/* index.html */
+/* hero */
+/* title */
+.hero {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--primary-white-color);
+  background-color: var(--hero-bg-color);
+}
+/* button */
+.hero-btn {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  color: var(--primary-white-color);
+  background-color: var(--hero-btn-bg-color);
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--accent-btn-color);
+}
+
+/* feature */
+/* feature-title */
+.feature-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--title-text-color);
+}
+.feature-paragraph {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+.feature-head {
+  display: none;
+}
+
+/* we-doing */
+/* title */
+.we-doing .title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--title-text-color);
+}
+
+/* team  */
+.team {
+  background-color: var(--secondary-white-color);
+}
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--title-text-color);
+}
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--title-text-color);
+}
+.team-paragrap {
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* portfolio.html */
+.portfolio-head {
+  display: none;
+}
+.filter-btn {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--title-text-color);
+  background: var(--secondary-white-color);
+  border-radius: 4px;
+}
+.filter-btn:active,
+.filter-btn:focus,
+.filter-btn:hover {
+  background-color: var(--accent-filter-btn-color);
+
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+.card {
+  text-decoration-line: none;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+
+  color: var(--paragraph-color);
+}
+.card-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+
+  color: var(--title-text-color);
+}
