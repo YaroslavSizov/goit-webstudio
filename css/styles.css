@@ -14,6 +14,8 @@
 }
 
 body {
+  margin: 0;
+
   font-family: "Roboto", sans-serif;
   font-size: 16px;
 
@@ -24,9 +26,31 @@ body {
 ul li {
   list-style: none;
 }
+p,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+  margin: 0;
+  padding-left: 0;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  margin: 0 auto;
+  /* outline: 2px solid tomato; */
+}
 
 /* logo header&footer*/
 .logo {
+  display: inline-block;
   text-decoration-line: none;
   font-family: "Raleway";
   font-weight: 700;
@@ -75,6 +99,10 @@ ul li {
 .footer {
   background-color: var(--footer-bg-color);
 }
+.footer .logo {
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
 .address-map {
   text-decoration-line: none;
   font-style: normal;
@@ -97,23 +125,45 @@ ul li {
 .address-contact:focus {
   color: var(--accent-link-color);
 }
+.footer .address {
+  padding-bottom: 60px;
+}
 
 /* index.html */
 /* hero */
 /* title */
 .hero {
+  background-color: var(--hero-bg-color);
+  text-align: center;
+  margin-bottom: 94px;
+}
+.hero-title {
+  padding-top: 200px;
+  padding-bottom: 30px;
+  padding-left: 237px;
+  padding-right: 237px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
+
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
   color: var(--primary-white-color);
-  background-color: var(--hero-bg-color);
 }
 /* button */
 .hero-btn {
+  /* position: absolute; */
+  /* width: 200px; */
+  height: 50px;
+  padding-left: 32px;
+  padding-right: 32px;
+  margin-bottom: 200px;
+
+  /* display: flex; */
+  /* align-items: center; */
+  /* text-align: center; */
   cursor: pointer;
   font-weight: 700;
   font-size: 16px;
@@ -122,6 +172,8 @@ ul li {
 
   color: var(--primary-white-color);
   background-color: var(--hero-btn-bg-color);
+  border: none;
+  border-radius: 4px;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -130,7 +182,12 @@ ul li {
 
 /* feature */
 /* feature-title */
+.feature {
+  margin-bottom: 94px;
+}
 .feature-title {
+  padding-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -150,7 +207,12 @@ ul li {
 
 /* we-doing */
 /* title */
+.we-doing {
+  margin-bottom: 94px;
+}
 .we-doing .title {
+  padding-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -165,6 +227,9 @@ ul li {
   background-color: var(--secondary-white-color);
 }
 .team-title {
+  padding-top: 94px;
+  padding-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -189,10 +254,21 @@ ul li {
 }
 
 /* portfolio.html */
+.portfolio {
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
 .portfolio-head {
   display: none;
 }
+.filter {
+  margin-bottom: 34px;
+}
 .filter-btn {
+  height: 38px;
+  padding-left: 22px;
+  padding-right: 22px;
+
   cursor: pointer;
   font-weight: 500;
   font-size: 16px;
@@ -202,6 +278,7 @@ ul li {
 
   color: var(--title-text-color);
   background: var(--secondary-white-color);
+  border: none;
   border-radius: 4px;
 }
 .filter-btn:active,
