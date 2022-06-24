@@ -41,11 +41,12 @@ button {
 
 .container {
   width: 1200px;
+  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
+  /* padding: 0 15px; */
 
-  margin: 0 auto;
-  /* outline: 2px solid tomato; */
+  /* outline: 2px solid tomato;  */
 }
 
 /* logo header&footer*/
@@ -68,13 +69,38 @@ button {
 
 /* header */
 /* link */
+.header > .container {
+  display: flex;
+  height: 80px;
+
+  /* outline: 2px solid green; */
+}
+.header nav {
+  display: flex;
+  align-items: center;
+
+  /* outline: 2px solid rgb(34, 0, 255); */
+}
+.header ul {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+
+  /* outline: 2px solid rgb(255, 64, 0); */
+}
+.nav li:first-child a {
+  margin-left: 93px;
+}
 .header-link {
+  margin-left: 50px;
+
   text-decoration-line: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
 
   color: var(--title-text-color);
+  /* outline: 2px solid rgb(255, 0, 200); */
 }
 
 .header-link:hover,
@@ -82,6 +108,9 @@ button {
   color: var(--accent-link-color);
 }
 /* contact */
+.header .contact li:last-child {
+  margin-left: 50px;
+}
 .header-contact {
   text-decoration-line: none;
   font-weight: 500;
@@ -89,6 +118,7 @@ button {
   line-height: 1.14;
 
   color: var(--paragraph-color);
+  /* outline: 2px solid rgb(128, 0, 75); */
 }
 
 .header-contact:hover,
@@ -98,6 +128,9 @@ button {
 /* footer */
 .footer {
   background-color: var(--footer-bg-color);
+}
+.footer .container{
+  height: 252px;
 }
 .footer .logo {
   padding-top: 60px;
