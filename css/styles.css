@@ -22,6 +22,9 @@ body {
   color: var(--paragraph-color);
   background-color: var(--primary-white-color);
 }
+img{
+  display: block;
+}
 
 ul li {
   list-style: none;
@@ -129,7 +132,7 @@ button {
 .footer {
   background-color: var(--footer-bg-color);
 }
-.footer .container{
+.footer .container {
   height: 252px;
 }
 .footer .logo {
@@ -215,6 +218,12 @@ button {
 
 /* feature */
 /* feature-title */
+.feature ul {
+  display: flex;
+}
+.feature li {
+  margin-left: 30px;
+}
 .feature {
   margin-bottom: 94px;
 }
@@ -240,6 +249,12 @@ button {
 
 /* we-doing */
 /* title */
+.we-doing ul {
+  display: flex;
+}
+.we-doing li {
+  margin-left: 30px;
+}
 .we-doing {
   margin-bottom: 94px;
 }
@@ -256,8 +271,24 @@ button {
 }
 
 /* team  */
+.team ul {
+  display: flex;
+}
+.team li {
+  margin-left: 30px;
+  margin-bottom: 94px;
+  box-shadow: #757575;
+
+  background-color: var(--primary-white-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
 .team {
   background-color: var(--secondary-white-color);
+}
+.team img {
+  margin-bottom: 30px;
 }
 .team-title {
   padding-top: 94px;
@@ -272,6 +303,8 @@ button {
   color: var(--title-text-color);
 }
 .team-name {
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -281,15 +314,22 @@ button {
   color: var(--title-text-color);
 }
 .team-paragrap {
+  margin-bottom: 30px;
+
   line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
 }
 
 /* portfolio.html */
+.portfolio ul{
+  display: flex;
+}
 .portfolio {
   margin-top: 94px;
   margin-bottom: 94px;
+
+  text-align: center;
 }
 .portfolio-head {
   display: none;
@@ -324,11 +364,18 @@ button {
   border-radius: 4px;
 }
 .card {
+  display: inline-block;
+margin-top: 30px;
+margin-left: 30px;
+
   text-decoration-line: none;
   line-height: 1.88;
   letter-spacing: 0.03em;
 
   color: var(--paragraph-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 .card-title {
   font-weight: 700;
