@@ -223,14 +223,11 @@ button {
 /* feature-title */
 .feature ul {
   display: flex;
-  margin-left: -30px;
+  gap: var(--basic-margin);
 
   /* outline: 2px solid black; */
 }
 .feature li {
-  margin-left: var(--basic-margin);
-  justify-content: space-around;
-
   /* outline: 2px solid green; */
 }
 .feature {
@@ -260,10 +257,9 @@ button {
 /* title */
 .we-doing ul {
   display: flex;
-  margin-left: calc( -1 * var(--basic-margin));
-}
-.we-doing li {
-  margin-left: var(--basic-margin);
+  gap: var(--basic-margin);
+  
+  /* outline: 2px solid green; */
 }
 .we-doing {
   margin-bottom: 94px;
@@ -283,13 +279,14 @@ button {
 /* team  */
 .team ul {
   display: flex;
-  margin-left: calc( -1 * var(--basic-margin));
+  gap: var(--basic-margin);
+  
+  /* outline: 2px solid green; */
 }
 .team li {
-  margin-left: var(--basic-margin);
   margin-bottom: 94px;
-  box-shadow: #757575;
 
+  box-shadow: #757575;
   background-color: var(--primary-white-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -382,13 +379,15 @@ button {
 /* CARD */
 .card-set {
   flex-wrap: wrap;
-  margin-top: calc( -1 * var(--basic-margin));
-  margin-left: calc( -1 * var(--basic-margin));
+  gap: var(--basic-margin);
+  flex-basis: calc(100% / 3);
+  /* margin-top: calc( -1 * var(--basic-margin)); */
+  /* margin-left: calc( -1 * var(--basic-margin)); */
 }
 .card-set li {
-  flex-basis: calc(100% / 3 - var(--basic-margin));
+  /* flex-basis: calc(100% / 3 - var(--basic-margin));
   margin-top: var(--basic-margin);
-  margin-left: var(--basic-margin);
+  margin-left: var(--basic-margin); */
 
   /* outline: 2px solid black; */
 }
