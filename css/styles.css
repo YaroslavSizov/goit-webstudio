@@ -557,9 +557,9 @@ button {
   gap: var(--basic-margin);
   flex-basis: calc(100% / 3);
 }
-.card-set li {
-  /* outline: 1px dashed black; */
-}
+/* .card-set li {
+  outline: 1px dashed black;
+} */
 .card img {
   margin-bottom: 20px;
 }
