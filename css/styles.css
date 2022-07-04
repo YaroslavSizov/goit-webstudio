@@ -11,6 +11,7 @@
   --hero-bg-color: #2f303a;
   --hero-btn-bg-color: #2196f3;
   --footer-bg-color: #2f303a;
+  --clients-color: #afb1b8;
 
   --basic-margin: 30px;
 }
@@ -115,11 +116,11 @@ button {
 }
 /* contact */
 .header .contact li:last-child {
-  margin-left: 50px;
+  margin-left: 47px;
 }
 .header-contact {
   display: inline-flex;
-  align-items: center;
+  /* align-items: center; */
 
   text-decoration-line: none;
   font-weight: 500;
@@ -145,7 +146,7 @@ button {
 .contact .icon-smartphone {
   width: 16px;
   height: 16px;
-  margin-right: 10px;
+  margin-right: 7px;
 
   fill: currentColor;
   /* background-color: aqua; */
@@ -154,8 +155,6 @@ button {
 .header-contact:focus {
   color: var(--accent-link-color);
 }
-
-
 
 /* footer */
 .footer {
@@ -226,19 +225,18 @@ button {
   background-color: rgba(255, 255, 255, 0.1);
   /* outline: 2px solid rgb(0, 255, 26); */
 }
-.social svg{
+.social svg {
   margin: 12px;
   height: 20px;
   width: 20px;
 }
-.footer .social svg{
+.footer .social svg {
   fill: var(--primary-white-color);
 }
 .social a:hover,
 .social a:focus {
   background-color: var(--accent-link-color);
 }
-
 
 /* index.html */
 /* hero */
@@ -309,39 +307,31 @@ button {
 .feature ul {
   display: inline-flex;
   gap: var(--basic-margin);
+  /* flex-wrap: wrap; */
+  /* flex-basis: calc(100% / 2); */
 
   /* outline: 2px solid black; */
 }
-.feature li {
-  /* display: inline-flex; */
-  /* flex-direction: column; */
+/* .feature li {
+  outline: 2px solid green;
+} */
+.feature-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  /* outline: 2px solid green; */
-}
-.feature li::before {
-  display: block;
-  content: "";
   height: 120px;
   width: 270px;
-  margin-bottom: 30px;
+  margin-bottom: var(--basic-margin);
 
-  background: #f5f4fa;
+  background-color: var(--secondary-white-color);
   border-radius: 4px;
-  background-size: 70px;
-  background-repeat: no-repeat;
-  background-position: center;
 }
-.feature li:nth-child(1)::before {
-  background-image: url(../images/antenna.svg);
-}
-.feature li:nth-child(2)::before {
-  background-image: url(../images/clock.svg);
-}
-.feature li:nth-child(3)::before {
-  background-image: url(../images/diagram.svg);
-}
-.feature li:nth-child(4)::before {
-  background-image: url(../images/astronaut.svg);
+.feature-icon svg {
+  height: 70px;
+  width: 70px;
+
+  /* outline: 2px solid green; */
 }
 .feature {
   margin-bottom: 94px;
@@ -448,21 +438,71 @@ button {
 .team .social li {
   height: 44px;
 }
-.team .social a{
-  color: #AFB1B8;
+.team .social a {
+  color: #afb1b8;
 }
 .team .social a:hover,
-.team .social a:focus{
+.team .social a:focus {
   color: var(--primary-white-color);
 }
-.team .social svg{
+.team .social svg {
   fill: currentColor;
 }
 
+/* clients */
+.clients .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.clients h2 {
+  margin-bottom: 50px;
 
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
 
+  color: #212121;
+}
+.clients ul {
+  display: inline-flex;
+  gap: var(--basic-margin);
+  /* flex-wrap: wrap; */
+  /* flex-basis: calc(100% / 3); */
+}
+.clients li {
+  width: 170px;
+  height: 92px;
 
+  /* left: 1015px; */
+  /* top: 2493px; */
+}
+.clients a {
+  width: inherit;
+  height: inherit;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--clients-color);
+  border: 1px solid var(--clients-color);
+  border-radius: 4px;
+
+  /* outline: 1px dashed; */
+}
+.clients a:focus,
+.clients a:hover {
+  color: var(--accent-link-color);
+  border-color: var(--accent-link-color);
+}
+.clients svg {
+  height: 60px;
+  width: 106px;
+
+  fill: currentColor;
+}
 
 /* portfolio.html */
 .portfolio ul {
@@ -511,7 +551,6 @@ button {
   border-radius: 4px;
 }
 
-
 /* CARD */
 .card-set {
   flex-wrap: wrap;
@@ -519,7 +558,7 @@ button {
   flex-basis: calc(100% / 3);
 }
 .card-set li {
-  /* outline: 2px solid black; */
+  /* outline: 1px dashed black; */
 }
 .card img {
   margin-bottom: 20px;
@@ -532,10 +571,13 @@ button {
   letter-spacing: 0.03em;
 
   color: var(--paragraph-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  overflow: hidden;
+
+  /* border: 1px solid #ff000d; */
+  /* overflow: hidden; */
+}
+.card:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .card-title {
   margin-left: 24px;
