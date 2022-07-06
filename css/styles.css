@@ -307,8 +307,6 @@ button {
 .feature ul {
   display: inline-flex;
   gap: var(--basic-margin);
-  /* flex-wrap: wrap; */
-  /* flex-basis: calc(100% / 2); */
 
   /* outline: 2px solid black; */
 }
@@ -555,27 +553,30 @@ button {
 .card-set {
   flex-wrap: wrap;
   gap: var(--basic-margin);
-  flex-basis: calc(100% / 3);
 }
-/* .card-set li {
-  outline: 1px dashed black;
-} */
+.card-set li {
+  width: calc((100% - (var(--basic-margin) * 2)) / 3);
+  height: auto;
+
+  /* outline: 1px dashed black; */
+}
 .card img {
   margin-bottom: 20px;
 }
 .card {
   display: inline-block;
+  height: -webkit-fill-available;
 
   text-decoration-line: none;
   line-height: 1.88;
   letter-spacing: 0.03em;
 
   color: var(--paragraph-color);
-
-  /* border: 1px solid #ff000d; */
+  border: 1px solid #eeeeee;
   /* overflow: hidden; */
 }
-.card:hover {
+.card:hover,
+.card:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
