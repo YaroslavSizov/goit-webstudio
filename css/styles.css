@@ -18,7 +18,6 @@
 
 body {
   margin: 0;
-  padding-top: 80px;
 
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -84,7 +83,7 @@ button {
   /* outline: 2px solid green; */
 }
 .header {
-  position: fixed;
+  /* position: fixed; */
   top: 0px;
   z-index: 2;
   width: 100%;
@@ -724,4 +723,81 @@ button {
 }
 .card:hover .card-thumb p {
   transform: translate(-50%, -50%);
+}
+
+/* backdrop */
+.backdrop {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  background: rgba(0, 0, 0, 0.2);
+
+  opacity: 1;
+  transition: opacity 250ms ease;
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* modal */
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.5);
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  height: 581px;
+  width: 528px;
+
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms ease;
+
+  background: var(--primary-white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  width: 30px;
+  height: 30px;
+  padding: 0px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  background-color: var(--primary-white-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  transition: color 250ms ease;
+}
+.close svg {
+  width: 11px;
+  height: 11px;
+
+  fill: currentColor;
+  transition: transform 250ms ease;
+}
+.close:hover,
+.close:focus {
+  color: var(--accent-link-color);
+}
+.close:hover svg,
+.close:focus svg {
+  transform: rotate(180deg);
 }
