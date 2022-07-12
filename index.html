@@ -366,10 +366,39 @@
     <div data-backdrop class="backdrop is-hidden">
         <div class="modal">
             <button data-close-modal type="button" class="close">
-                <svg >
+                <svg>
                     <use href="./images/sprite.svg#close"></use>
                 </svg>
             </button>
+            <form class="form" autocomplete="on" novalidate>
+                <p>Оставьте свои данные, мы вам перезвоним</p>
+                <div class="group">
+                    <label class="label">
+                        Имя
+                        <input type="text" name="username" autofocus placeholder="" />
+                    </label>
+                    <label class="label">
+                        Телефон
+                        <input type="tel" name="phone_number">
+                    </label>
+                    <label class="label">
+                        Почта
+                        <input type="email" name="email" />
+                    </label>
+                    <label class="textarea">
+                        Комментарий
+                        <textarea name="comment" cols="" rows="8" resize="none" placeholder="Введите текст"></textarea>
+                    </label>
+                </div>
+                <label class="checkbox">
+                    <input type="checkbox">
+                    Соглашаюсь с рассылкой и принимаю
+                    <a href="">Условия договора</a>
+                </label>
+
+
+                <button class="btn" type="submit">Отправить</button>
+            </form>
         </div>
     </div>
 
