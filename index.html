@@ -360,6 +360,21 @@
                     </li>
                 </ul>
             </div>
+
+            <form class="footer-form">
+                <div class="form-thumb">
+                    <label>
+                        Подпишитесь на рассылку
+                        <input type="email" name="email" placeholder="E-mail"></input>
+                    </label>
+                    <button type="submit">
+                        Подписаться
+                        <svg>
+                            <use href="./images/sprite.svg#send"></use>
+                        </svg>
+                    </button>
+                </div>
+            </form>
         </div>
     </footer>
 
@@ -370,32 +385,48 @@
                     <use href="./images/sprite.svg#close"></use>
                 </svg>
             </button>
+
             <form class="form" autocomplete="on" novalidate>
                 <p>Оставьте свои данные, мы вам перезвоним</p>
                 <div class="group">
                     <label class="label">
                         Имя
-                        <input type="text" name="username" autofocus placeholder="" />
+                        <div class="svg-thumb">
+                            <input type="text" name="username" />
+                            <svg>
+                                <use href="./images/sprite.svg#person"></use>
+                            </svg>
+                        </div>
                     </label>
                     <label class="label">
                         Телефон
-                        <input type="tel" name="phone_number">
+                        <div class="svg-thumb">
+                            <input type="tel" name="phone_number" />
+                            <svg>
+                                <use href="./images/sprite.svg#phone"></use>
+                            </svg>
+                        </div>
                     </label>
                     <label class="label">
                         Почта
-                        <input type="email" name="email">
+                        <div class="svg-thumb">
+                            <input type="email" name="email" />
+                            <svg>
+                                <use href="./images/sprite.svg#email-form"></use>
+                            </svg>
+                        </div>
                     </label>
                     <label class="textarea">
                         Комментарий
-                        <textarea name="comment" cols="" rows="8" resize="none" placeholder="Введите текст"></textarea>
+                        <textarea name="comment" rows="8" resize="none" placeholder="Введите текст"></textarea>
                     </label>
                 </div>
+
                 <label class="checkbox">
                     <input type="checkbox">
-                    Соглашаюсь с рассылкой и принимаю
+                    <span>Соглашаюсь с рассылкой и принимаю</span>
                     <a href="">Условия договора</a>
                 </label>
-
 
                 <button class="btn" type="submit">Отправить</button>
             </form>
