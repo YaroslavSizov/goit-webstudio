@@ -1,0 +1,17 @@
+/* logo header&footer*/
+.logo {
+  display: inline-block;
+  text-decoration-line: none;
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+
+  color: $logo-black-color;
+}
+.logo .word-web {
+  color: $logo-blue-color;
+}
+.logo .word-studio {
+  color: $primary-white-color;
+}

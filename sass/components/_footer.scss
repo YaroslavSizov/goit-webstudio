@@ -1,0 +1,146 @@
+/* footer */
+.footer {
+  background-color: $footer-bg-color;
+}
+.footer .container {
+  display: flex;
+  height: 252px;
+}
+.footer .logo {
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+.address-map {
+  text-decoration-line: none;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: $primary-white-color;
+}
+.address-contact {
+  text-decoration-line: none;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+.address-contact:hover,
+.address-contact:focus {
+  color: $accent-link-color;
+}
+.footer .address {
+  padding-bottom: 60px;
+}
+.footer h2 {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $primary-white-color;
+}
+.footer .social {
+  display: flex;
+  flex-direction: column;
+  margin-left: 70px;
+  margin-top: 72px;
+
+  /* outline: 2px solid greenyellow; */
+}
+.social ul {
+  display: inline-flex;
+  gap: 10px;
+}
+.social a {
+  display: inline-block;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms ease;
+  /* outline: 2px solid rgb(0, 255, 26); */
+}
+.footer .social a:hover,
+.footer .social a:focus {
+  background-color: $accent-link-color;
+}
+.social svg {
+  margin: 12px;
+  height: 20px;
+  width: 20px;
+}
+.footer .social svg {
+  fill: $primary-white-color;
+}
+
+/* footer-form */
+.footer-form {
+  margin-left: 93px;
+  margin-top: 72px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $primary-white-color;
+}
+.form-thumb {
+  display: flex;
+  align-items: end;
+}
+.footer-form label {
+  display: flex;
+  flex-direction: column;
+}
+.footer-form input {
+  margin-top: 20px;
+  margin-right: 12px;
+  padding: 0px 16px;
+  height: 50px;
+  width: 358px;
+
+  color: $primary-white-color;
+  background-color: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+.footer-form input:focus-visible {
+  border-color: $accent-filter-btn-color;
+  outline: none;
+}
+.footer-form button {
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  min-width: 200px;
+  height: 50px;
+  padding: 0px 28px;
+  cursor: pointer;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: $primary-white-color;
+
+  background: $accent-filter-btn-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 0px;
+}
+.footer-form svg {
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
+}

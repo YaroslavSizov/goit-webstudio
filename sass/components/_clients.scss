@@ -1,0 +1,50 @@
+/* clients */
+.clients .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.clients h2 {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: $title-text-color;
+}
+.clients ul {
+  display: inline-flex;
+  gap: $basic-margin;
+}
+.clients li {
+  width: 170px;
+  height: 92px;
+}
+.clients a {
+  width: inherit;
+  height: inherit;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: $clients-color;
+  border: 1px solid $clients-color;
+  border-radius: 4px;
+  transition: color 250ms ease, border-color 250ms ease;
+
+  /* outline: 1px dashed; */
+}
+.clients a:focus,
+.clients a:hover {
+  color: $accent-link-color;
+  border-color: $accent-link-color;
+}
+.clients svg {
+  height: 60px;
+  width: 106px;
+
+  fill: currentColor;
+}

@@ -1,0 +1,56 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+
+  color: $paragraph-color;
+  background-color: $primary-white-color;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul li {
+  list-style: none;
+}
+p,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+  margin: 0;
+  padding-left: 0;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* padding: 0 15px; */
+
+  /* outline: 2px solid tomato; */
+}
+
+.backdrop {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  background: rgba(0, 0, 0, 0.2);
+
+  opacity: 1;
+  transition: opacity 250ms ease;
+}
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
