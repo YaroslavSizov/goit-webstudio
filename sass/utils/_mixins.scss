@@ -1,0 +1,13 @@
+@mixin outline($color: tomato) {
+    outline: 1px solid $color;
+}
+
+// @include outline(red);
+
+@mixin centeredFlex($type: flex){
+    display: $type;
+    align-items: center;
+    justify-content: center;
+}
+
+// @include centeredFlex(inline-flex);

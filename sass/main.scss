@@ -2,6 +2,8 @@
 // @import "./base/_fonts.scss";
 // @import "./base/_normalize.scss";
 @import "./base/def-styles";
+@import "./utils/placeholders";
+@import "./utils/mixins";
 @import "./components/logo";
 @import "./components/_header.scss";
 @import "./components/footer";
@@ -11,8 +13,7 @@
 @import "./components/we-doing";
 @import "./components/team";
 @import "./components/clients";
-@import "./components/portfolio";
-// @import "";
+// @import "./components/portfolio";
 // @import "";
 // @import "";
 // @import "";

@@ -1,27 +1,55 @@
 /* team  */
-.team ul {
-  display: flex;
-  gap: $basic-margin;
-
-  /* outline: 2px solid green; */
+.team {
+  background-color: $secondary-white-color;
 }
-.team .team-card {
-  margin-bottom: 94px;
+.team-item {
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: $basic-margin;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px){
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1200px){
+    padding-bottom: 94px;
+  }
+
+  // outline: 2px solid green;
+}
+.team-card {
+  display: flow-root;
+
+  width: 100%;
+  // margin-bottom: 94px;
+  margin-left: auto;
+  margin-right: auto;
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   background-color: $primary-white-color;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px){
+    flex-basis: calc((100% - $basic-margin) / 2);
+  }
+
+  @media screen and (max-width: 767px) {
+    max-width: 450px;
+
+    &:not(:last-child) {
+      margin-bottom: $basic-margin;
+    }
+  }
 }
-.team {
-  background-color: $secondary-white-color;
-}
+
 .team img {
   margin-bottom: $basic-margin;
 }
 .team-title {
-  padding-top: 94px;
-  padding-bottom: 50px;
+  padding-top: 60px;
+  padding-bottom: 30px;
 
   font-weight: 700;
   font-size: 36px;
@@ -30,6 +58,11 @@
   letter-spacing: 0.03em;
 
   color: $title-text-color;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 50px;
+  }
 }
 .team-name {
   margin-bottom: 10px;
@@ -50,9 +83,16 @@
   letter-spacing: 0.03em;
 }
 .team .social {
+  display: flex;
   gap: 10px;
-  margin-left: 32px;
-  margin-bottom: 30px;
+  justify-content: center;
+
+  margin-bottom: 24px;
+
+  @media screen and (min-width: 1200px) {
+    // margin-left: 32px;
+    margin-bottom: 30px;
+  }
 }
 .team .social li {
   height: 44px;

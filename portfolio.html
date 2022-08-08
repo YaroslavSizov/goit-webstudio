@@ -12,7 +12,7 @@
     rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
   <!-- <link href="cssold/styles.css" rel="stylesheet"> -->
-  <link rel="stylesheet" href="css/main.min.css">
+  <link rel="stylesheet" href="./css/portfolio.css">
   </link>
 
 </head>
@@ -23,14 +23,39 @@
     <div class="container">
       <nav class="nav">
         <a class="logo" href="./index.html"><span class="word-web">Web</span>Studio</a>
-        <ul>
-          <li><a class="header-link" href="./index.html">Студия</a></li>
-          <li>
-            <div class="active"></div>
-            <a class="header-link" href="./portfolio.html">Портфолио</a>
-          </li>
-          <li><a class="header-link" href="">Контакты</a></li>
-        </ul>
+        <div class="burger" id="nav-menu" data-menu>
+          <ul class="nav-list">
+            <li><a class="header-link active-mobile" href="./index.html">Студия</a></li>
+            <li>
+              <div class="active"></div>
+              <a class="header-link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li><a class="header-link" href="">Контакты</a></li>
+          </ul>
+          <div class="mobile">
+            <ul class="">
+              <li><a class="burger-tel" href="tel:+380961111111">
+                  +38 096 111 11 11</a>
+              </li>
+              <li><a class="burger-mail" href="mailto:info@devstudio.com">
+                  info@devstudio.com</a>
+              </li>
+            </ul>
+            <ul class="burger-social">
+              <li><a class="burger-link" href="">Instagram</a></li>
+              <li><a class="burger-link" href="">Facebook</a></li>
+              <li><a class="burger-link" href="">Twitter</a></li>
+              <li><a class="burger-link" href="">linkedIn</a></li>
+            </ul>
+          </div>
+        </div>
+        <button class="menu-btn" type="button" aria-label="кнопка открытия меню" aria-expanded="false"
+          aria-controls="nav-menu" data-menu-button>
+          <svg width="40" height="40">
+            <use class="menu" href="./images/sprite.svg#menu"></use>
+            <use class="close-menu" href="./images/sprite.svg#close-menu"></use>
+          </svg>
+        </button>
       </nav>
       <ul class="contact">
         <li><a class="header-contact mail" href="mailto:info@devstudio.com">
@@ -65,7 +90,7 @@
           <li>
             <a class="card" href="">
               <div class="card-thumb">
-                <img src="./images/portfolio-1.jpg" alt="Внешний вид веб-сайта">
+                <img src="./images/portfolio-1.jpg" alt="Внешний вид веб-сайта" max-width="560">
                 <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
                   посетителю получить
                   исчерпывающие сведения о компании или частном лице.</p>
@@ -78,7 +103,7 @@
           <li>
             <a class="card" href="">
               <div class="card-thumb">
-                <img src="./images/portfolio-2.jpg" alt="Дизайн постера">
+                <img src="./images/portfolio-2.jpg" alt="Дизайн постера" max-width="560">
                 <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
                   посетителю получить
                   исчерпывающие сведения о компании или частном лице.</p>
@@ -91,7 +116,7 @@
           <li>
             <a class="card" href="">
               <div class="card-thumb">
-                <img src="./images/portfolio-3.jpg" alt="Логотип ресторана">
+                <img src="./images/portfolio-3.jpg" alt="Логотип ресторана" max-width="560">
                 <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
                   посетителю получить
                   исчерпывающие сведения о компании или частном лице.</p>
@@ -104,7 +129,7 @@
           <li>
             <a class="card" href="">
               <div class="card-thumb">
-                <img src="./images/portfolio-4.jpg" alt="Фото продукта (наушники)" width="370">
+                <img src="./images/portfolio-4.jpg" alt="Фото продукта (наушники)" max-width="560">
                 <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
                   посетителю получить
                   исчерпывающие сведения о компании или частном лице.</p>
@@ -117,7 +142,7 @@
           <li>
             <a class="card" href="">
               <div class="card-thumb">
-                <img src="./images/portfolio-5.jpg" alt="Фото презентации проекта" width="370">
+                <img src="./images/portfolio-5.jpg" alt="Фото презентации проекта" max-width="560">
                 <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
                   посетителю получить
                   исчерпывающие сведения о компании или частном лице.</p>
@@ -130,7 +155,7 @@
           <li>
             <a class="card" href="">
               <div class="card-thumb">
-                <img src="./images/portfolio-6.jpg" alt="Внешний вид веб-сайта" width="370">
+                <img src="./images/portfolio-6.jpg" alt="Внешний вид веб-сайта" max-width="560">
                 <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
                   посетителю получить
                   исчерпывающие сведения о компании или частном лице.</p>
@@ -143,7 +168,7 @@
           <li>
             <a class="card" href="">
               <div class="card-thumb">
-                <img src="./images/portfolio-7.jpg" alt="Дизайн издания" width="370">
+                <img src="./images/portfolio-7.jpg" alt="Дизайн издания" max-width="560">
                 <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
                   посетителю получить
                   исчерпывающие сведения о компании или частном лице.</p>
@@ -156,7 +181,7 @@
           <li>
             <a class="card" href="">
               <div class="card-thumb">
-                <img src="./images/portfolio-8.jpg" alt="Этикетка продукта" width="370">
+                <img src="./images/portfolio-8.jpg" alt="Этикетка продукта" max-width="560">
                 <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
                   посетителю получить
                   исчерпывающие сведения о компании или частном лице.</p>
@@ -169,7 +194,7 @@
           <li>
             <a class="card" href="">
               <div class="card-thumb">
-                <img src="./images/portfolio-9.jpg" alt="Главный интерфейс приложения" width="370">
+                <img src="./images/portfolio-9.jpg" alt="Главный интерфейс приложения" max-width="560">
                 <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
                   посетителю получить
                   исчерпывающие сведения о компании или частном лице.</p>
@@ -185,46 +210,49 @@
   <!-- footer  -->
   <footer class="footer">
     <div class="container">
-      <div><a class="logo" href="./index.html"><span class="word-web">Web</span><span
-            class="word-studio">Studio</span></a>
-        <address class="address">
+      <div class="footer-thumb">
+        <div>
+          <a class="logo" href="./index.html"><span class="word-web">Web</span><span
+              class="word-studio">Studio</span></a>
+          <address class="address">
+            <ul>
+              <li><a class="address-map" href="https://goo.gl/maps/tFrqAYimS7p1wqo49">г. Киев, пр-т Леси
+                  Украинки,
+                  26</a></li>
+              <li><a class="address-contact" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+              <li><a class="address-contact" href="tel:+380961111111">+38 096 111 11 11</a></li>
+            </ul>
+          </address>
+        </div>
+        <div class="social">
+          <h2>присоединяйтесь</h2>
           <ul>
-            <li><a class="address-map" href="https://goo.gl/maps/tFrqAYimS7p1wqo49">г. Киев, пр-т Леси
-                Украинки,
-                26</a></li>
-            <li><a class="address-contact" href="tel:+380961111111">+38 096 111 11 11</a></li>
-            <li><a class="address-contact" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+            <li><a href="" class="">
+                <svg class="insta">
+                  <use href="./images/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li><a href="" class="twitter">
+                <svg class="">
+                  <use href="./images/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li><a href="" class="fb">
+                <svg class="">
+                  <use href="./images/sprite.svg#facebook "></use>
+                </svg>
+              </a>
+            </li>
+            <li><a href="" class="linkedin">
+                <svg class="">
+                  <use href="./images/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
           </ul>
-        </address>
-      </div>
-      <div class="social">
-        <h2>присоединяйтесь</h2>
-        <ul>
-          <li><a href="" class="">
-              <svg class="insta">
-                <use href="./images/sprite.svg#instagram"></use>
-              </svg>
-            </a>
-          </li>
-          <li><a href="" class="twitter">
-              <svg class="">
-                <use href="./images/sprite.svg#twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li><a href="" class="fb">
-              <svg class="">
-                <use href="./images/sprite.svg#facebook "></use>
-              </svg>
-            </a>
-          </li>
-          <li><a href="" class="linkedin">
-              <svg class="">
-                <use href="./images/sprite.svg#linkedin"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+        </div>
       </div>
 
       <form class="footer-form">
@@ -243,6 +271,8 @@
       </form>
     </div>
   </footer>
+
+  <script src="./portfolio.js" type="module"></script>
 </body>
 
 </html>

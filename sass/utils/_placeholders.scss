@@ -1,0 +1,10 @@
+%button {
+  display: block;
+  height: 50px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+// @extend %button;
+// @extend .button;

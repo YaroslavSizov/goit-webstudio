@@ -1,13 +1,17 @@
 /* we-doing */
 /* title */
+.we-doing {
+  margin-bottom: 94px;
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
 .we-doing ul {
   display: flex;
   gap: $basic-margin;
 
   /* outline: 2px solid green; */
-}
-.we-doing {
-  margin-bottom: 94px;
 }
 .we-doing .title {
   padding-bottom: 50px;
