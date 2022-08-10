@@ -1,9 +1,9 @@
 // autoPaddingTop
-// const { height: pageHeaderHeight } = document
-//     .querySelector(".header")
-//     .getBoundingClientRect();
+const { height: pageHeaderHeight } = document
+    .querySelector(".header")
+    .getBoundingClientRect();
 
-// document.body.style.paddingTop = `${pageHeaderHeight}px`;
+document.body.style.paddingTop = `${pageHeaderHeight}px`;
 
 
 
@@ -20,6 +20,7 @@ refs.closeModalBtn.addEventListener("click", toggleModal);
 refs.backdrop.addEventListener("click", logBackdropClick);
 
 function toggleModal() {
+    document.body.classList.toggle("modal-open")
     refs.backdrop.classList.toggle("is-hidden");
 }
 

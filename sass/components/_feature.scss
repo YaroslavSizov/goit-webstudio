@@ -61,8 +61,11 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
   color: $title-text-color;
+
+  @media screen and (max-width: 767px){
+    text-align: center;
+  }
 }
 .feature-paragraph {
   font-size: 14px;

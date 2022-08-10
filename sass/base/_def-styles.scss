@@ -5,6 +5,10 @@ body {
 
   color: $paragraph-color;
   background-color: $primary-white-color;
+
+  &.modal-open{
+    overflow: hidden;
+  }
 }
 img {
   display: block;
@@ -55,7 +59,7 @@ button {
 
 .backdrop {
   position: fixed;
-  z-index: 1;
+  z-index: 3;
   top: 0;
   left: 0;
 

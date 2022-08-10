@@ -5,6 +5,9 @@ body {
   color: #757575;
   background-color: #ffffff;
 }
+body.modal-open {
+  overflow: hidden;
+}
 
 img {
   display: block;
@@ -48,7 +51,7 @@ button {
 
 .backdrop {
   position: fixed;
-  z-index: 1;
+  z-index: 3;
   top: 0;
   left: 0;
   width: 100vw;
@@ -109,9 +112,13 @@ button {
 /* header */
 /* link */
 .header {
-  position: relative;
+  position: fixed;
+  top: 0px;
+  z-index: 2;
   width: 100%;
   background-color: #ffffff;
+  -webkit-box-shadow: 0px 1px 1px -1px rgba(0, 0, 0, 0.14);
+          box-shadow: 0px 1px 1px -1px rgba(0, 0, 0, 0.14);
 }
 
 .header > .container {
@@ -159,6 +166,7 @@ button {
   .burger {
     display: none;
     position: absolute;
+    z-index: 1;
     top: 100%;
     left: 0;
     width: 100%;
@@ -682,12 +690,12 @@ button {
 .modal {
   display: block;
   position: absolute;
-  top: 50%;
+  top: 93px;
   left: 50%;
   min-height: 609px;
   width: calc(100% - 30px);
-  -webkit-transform: translate(-50%, -50%) scale(1);
-          transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translatex(-50%) scale(1);
+          transform: translatex(-50%) scale(1);
   -webkit-transition: -webkit-transform 250ms ease;
   transition: -webkit-transform 250ms ease;
   transition: transform 250ms ease;
@@ -700,6 +708,13 @@ button {
 @media screen and (min-width: 480px) and (max-width: 1199px) {
   .modal {
     width: 450px;
+  }
+}
+@media screen and (min-width: 767px) {
+  .modal {
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1058,6 +1073,11 @@ textarea {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
+}
+@media screen and (max-width: 767px) {
+  .feature-title {
+    text-align: center;
+  }
 }
 
 .feature-paragraph {

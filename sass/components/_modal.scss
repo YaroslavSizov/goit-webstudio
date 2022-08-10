@@ -5,13 +5,13 @@
 .modal {
   display: block;
   position: absolute;
-  top: 50%;
+  top: 93px;
   left: 50%;
 
   min-height: 609px;
   width: calc(100% - 30px);
 
-  transform: translate(-50%, -50%) scale(1);
+  transform: translatex(-50%) scale(1);
   transition: transform 250ms ease;
 
   background: $primary-white-color;
@@ -21,6 +21,11 @@
 
   @media screen and (min-width: 480px) and (max-width: 1199px) {
     width: 450px;
+  }
+
+  @media screen and (min-width: 767px){
+    top: 50%;
+transform: translate(-50%, -50%) scale(1);
   }
 
   @media screen and (min-width: 1200px) {

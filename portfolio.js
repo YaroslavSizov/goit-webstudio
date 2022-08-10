@@ -1,9 +1,9 @@
 // autoPaddingTop
-// const { height: pageHeaderHeight } = document
-//     .querySelector(".header")
-//     .getBoundingClientRect();
+const { height: pageHeaderHeight } = document
+    .querySelector(".header")
+    .getBoundingClientRect();
 
-// document.body.style.paddingTop = `${pageHeaderHeight}px`;
+document.body.style.paddingTop = `${pageHeaderHeight}px`;
 
 // openMenu
 (() => {

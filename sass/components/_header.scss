@@ -1,15 +1,13 @@
 /* header */
 /* link */
 .header {
-  // display: none;
-
-  position: relative;
-  // position: fixed;
-  // top: 0px;
-  // z-index: 2;
+  position: fixed;
+  top: 0px;
+  z-index: 2;
   width: 100%;
 
   background-color: $primary-white-color;
+  box-shadow: 0px 1px 1px -1px rgb(0 0 0 / 14%);
 }
 .header > .container {
   display: flex;
@@ -48,6 +46,7 @@
     display: none;
 
     position: absolute;
+    z-index: 1;
     top: 100%;
     left: 0;
     width: 100%;
